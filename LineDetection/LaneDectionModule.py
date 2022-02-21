@@ -5,7 +5,7 @@ import utlis
 curveList = []
 avgVal = 10
 
-def getLaneCurve(img, display = 2, ):
+def getLaneCurve(img, display = 2):
     # Display: 0 -> not display anything, 1 -> result only, 2 -> complete pipeline
     imgCopy = img.copy()
     imgResult = img.copy()
@@ -71,11 +71,11 @@ def getLaneCurve(img, display = 2, ):
 
 if __name__ == '__main__':
 
-    cap = cv2.VideoCapture('land_line_test2.mp4')
+    cap = cv2.VideoCapture('video-1645448567.mp4')
     frameCounter = 0
 
     # Warping Lane
-    initialTrackBarValues = [111, 213, 59, 240]
+    initialTrackBarValues = [57, 140, 46, 205]
     utlis.initializeTrackbars(initialTrackBarValues)
 
     while True:
