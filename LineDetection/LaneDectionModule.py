@@ -71,11 +71,11 @@ def getLaneCurve(img, display = 2):
 
 if __name__ == '__main__':
 
-    cap = cv2.VideoCapture('video-1645448567.mp4')
+    cap = cv2.VideoCapture('test-video.mp4')
     frameCounter = 0
 
     # Warping Lane
-    initialTrackBarValues = [57, 140, 46, 205]
+    initialTrackBarValues = [135, 103, 53, 145]
     utlis.initializeTrackbars(initialTrackBarValues)
 
     while True:

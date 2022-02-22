@@ -7,7 +7,7 @@ def thresholding(img):
 
     # The range of White color
     lowerWhite = np.array([0,0,0])#
-    upperWhite = np.array([255,19,255])#
+    upperWhite = np.array([172,19,255])#
 
     # Create a mask from range above
     maskedWhite = cv2.inRange(imgHSV, lowerWhite, upperWhite)

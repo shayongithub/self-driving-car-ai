@@ -12,14 +12,14 @@ def empty(a):
 
 cv2.namedWindow("HSV")
 cv2.resizeWindow("HSV", 640, 240)
-cv2.createTrackbar("HUE Min", "HSV", 4, 179, empty)#0
-cv2.createTrackbar("HUE Max", "HSV", 22, 179, empty)#179
+cv2.createTrackbar("HUE Min", "HSV", 0, 179, empty)#0
+cv2.createTrackbar("HUE Max", "HSV", 179, 179, empty)#179
 cv2.createTrackbar("SAT Min", "HSV", 0, 255, empty)#0
-cv2.createTrackbar("SAT Max", "HSV", 69, 255, empty)#19
-cv2.createTrackbar("VALUE Min", "HSV", 141, 255, empty)#44
-cv2.createTrackbar("VALUE Max", "HSV", 192, 255, empty)#255
+cv2.createTrackbar("SAT Max", "HSV", 39, 255, empty)#19
+cv2.createTrackbar("VALUE Min", "HSV", 216, 255, empty)#172
+cv2.createTrackbar("VALUE Max", "HSV", 255, 255, empty)#255
 
-cap = cv2.VideoCapture('video-1645448567.mp4')
+cap = cv2.VideoCapture('test-video.mp4')
 frameCounter = 0
 
 while True:
