@@ -17,8 +17,9 @@ Required package:
 - numpy
 - matplotlib
 - pandas
+- opencv
 
-These requirements can be easily installed by: `pip install -r requirements.txt`
+These requirements can be easily installed by: `pip install -r requirement.txt`
 
 ## Architecture
 
