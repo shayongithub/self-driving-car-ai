@@ -11,7 +11,7 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 ##############################################
 
 # SETUP THE VIDEO CAMERA
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture('test-video.mp4')
 cap.set(3, frameWidth)
 cap.set(4, frameHeight)
 cap.set(10, brightness)
