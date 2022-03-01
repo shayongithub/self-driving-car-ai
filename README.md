@@ -36,6 +36,13 @@ Using the idea of **Pixel Summation** to find the lane curve and giving suggesti
 
 ### Traffic Sign Recognition
 
+<br>
+<p align="center">
+    <img src="img/traficSignDetection.jpg" 
+        alt="pixel summation">
+</p>
+<br />
+
 ## Demo
 
 We currently seperate these two modules into two files: **LineDetection** and **TrafficSignDetection**. So, if you want to test the Line Detection module, first `cd LineDetection`, and then run the command `python LaneDetectionModule.py`. Simiarly, `cd TrafficSignDetection` and run `python TrafficSign_Test.py`. 
