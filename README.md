@@ -36,9 +36,18 @@ Using the idea of **Pixel Summation** to find the lane curve and giving suggesti
 
 ### Traffic Sign Recognition
 
+Using Convolutional neural network (CNN) to classify images.
+
+Please install library version below to create the model:
+<ul>
+    <li>keras 2.3.1</li>
+    <li>tensorflow 2.0.0</li>
+    <li>python 3.6</li>
+</ul>
+
 <br>
 <p align="center">
-    <img src="img/traficSignDetection.jpg" 
+    <img src="img/trafficSignDetection.jpg" 
         alt="pixel summation">
 </p>
 <br />
