@@ -16,7 +16,7 @@ cap.set(3, frameWidth)
 cap.set(4, frameHeight)
 cap.set(10, brightness)
 # IMPORT THE TRANNIED MODEL
-pickle_in = open("model_trained.p", "rb")  ## rb = READ BYTE
+pickle_in = open("TrafficSignDetection/model_trained.p", "rb")  ## rb = READ BYTE
 model = pickle.load(pickle_in)
 
 def grayscale(img):
@@ -128,7 +128,7 @@ while True:
 
     # READ IMAGE
     success, imgOrignal = cap.read()
-
+    imgOrignal = cv2.resize(imgOrignal, (frameWidth, frameHeight))
     # PROCESS IMAGE
     img = np.asarray(imgOrignal)
     img = cv2.resize(img, (32, 32))
@@ -150,5 +150,5 @@ while True:
         cv2.putText(imgOrignal, str(round(probabilityValue * 100, 2)) + "%", (180, 75), font, 0.75, (0, 0, 255), 2, cv2.LINE_AA)
         cv2.imshow("Result", imgOrignal)
 
-    if cv2.waitKey(1) and 0xFF == ord('q'):
+    if cv2.waitKey(5) and 0xFF == ord('q'):
         break
