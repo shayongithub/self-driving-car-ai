@@ -8,7 +8,7 @@ To use the project, first clone the repo on your device using the command below:
 git init
 ```
 ```cd
-git clone https://github.com/shayongithub/stream-recommendation-system
+git clone https://github.com/shayongithub/self-driving-car-ai/
 ```
 
 Required package:
